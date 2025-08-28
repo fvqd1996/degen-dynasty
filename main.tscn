@@ -33,10 +33,10 @@ scale = Vector2(3.13716, 3.13716)
 text = "BUY 🚀"
 
 [node name="SellButton" type="Button" parent="."]
-offset_left = 209.0
-offset_top = 541.0
-offset_right = 282.0
-offset_bottom = 572.0
+offset_left = 559.0
+offset_top = 544.0
+offset_right = 632.0
+offset_bottom = 575.0
 scale = Vector2(3.08634, 3.08634)
 text = "SELL 💸s"
 
