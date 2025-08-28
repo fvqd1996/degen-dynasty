@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://1ngwe0wdt38k"]
+
+[ext_resource type="Script" uid="uid://dpkae0b61l7ur" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Main" type="Node2D"]
+position = Vector2(-4, -96)
+script = ExtResource("1_ig7tw")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="MoneyLabel" type="Label" parent="."]
+offset_left = 7.0
+offset_top = 98.0
+offset_right = 98.0
+offset_bottom = 143.0
+theme_override_font_sizes/font_size = 32
+text = "$1000"
+
+[node name="PriceLabel" type="Label" parent="."]
+offset_left = 445.0
+offset_top = 271.0
+offset_right = 701.0
+offset_bottom = 338.0
+theme_override_font_sizes/font_size = 48
+text = "COIN: $100"
+
+[node name="BuyButton" type="Button" parent="."]
+offset_left = 5.0
+offset_top = 542.0
+offset_right = 67.0
+offset_bottom = 573.0
+scale = Vector2(3.13716, 3.13716)
+text = "BUY 🚀"
+
+[node name="SellButton" type="Button" parent="."]
+offset_left = 209.0
+offset_top = 541.0
+offset_right = 282.0
+offset_bottom = 572.0
+scale = Vector2(3.08634, 3.08634)
+text = "SELL 💸s"
+
+[connection signal="pressed" from="BuyButton" to="." method="_on_buy_button_pressed"]
+[connection signal="pressed" from="SellButton" to="." method="_on_sell_button_pressed"]
